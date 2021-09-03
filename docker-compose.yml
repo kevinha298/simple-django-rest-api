@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    container_name: django_app
+    container_name: django_app32
     build:
       context: .
     ports:
@@ -16,7 +16,7 @@ services:
   db:
     image: postgres
     restart: always
-    container_name: postgres_db
+    container_name: postgres_db32
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
