@@ -85,19 +85,14 @@ python manage.py migrate
 
 
 
+Test cases: URL: http://127.0.0.1:8000/api/employee/1
 
+POST = create/insert/add
+GET = retrieve/fetch
+PUT = update/edit
+DELETE = remove/delete
 
-
-
-20) Once inside the app service of the django_app container, create a super user and enter username, email address, and password
-python manage.py createsuperuser
-
-
-21) Go to admin site to test:
-http://127.0.0.1:8000/admin
-
-22) Enter username and password for admin to test
-
-23) To rebuild image created above after making any change to the containers in the docker-compose.yml file:
-docker-compose build
-
+GET: http://127.0.0.1:8000/api/employee/2
+POST: http://127.0.0.1:8000/api/employee/2
+PUT: http://127.0.0.1:8000/api/employee/2/
+DELETE: http://127.0.0.1:8000/api/employee/2
