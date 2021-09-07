@@ -12,7 +12,7 @@ code .
 4) Open first terminal session in vs code to build container image:
 docker-compose up
 
-5) Open second terminal session in vs code to migrate Django models to Postgresql database:
+5) Once the image is built from the session above, open second terminal session in vs code to migrate Django models to Postgresql database:
 docker-compose run app python manage.py migrate
 
 6) On the second terminal session in vs code, build image containers and stop the containers:
